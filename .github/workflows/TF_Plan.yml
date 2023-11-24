@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-
+    paths:
+      - 'TeraAzure/operands/dv_rs/**'
 jobs:
   terraform:
     name: "Terraform"
