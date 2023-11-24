@@ -4,18 +4,19 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'teraazureoperandrsdv/**'
+    # paths:
+    #   - 'teraazureoperandrsdv/**'
 
 jobs:
   terraform:
     name: "Terraform"
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        shell: bash
-        working-directory: ./teraazureoperandrsdv    
+    # defaults:
+    #   run:
+    #     shell: bash
+    #     working-directory: ./teraazureoperandrsdv    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
