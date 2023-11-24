@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'TeraAzure/**'
+      - 'TeraAzure/operands/**'
 jobs:
   terraform:
     name: "Terraform"
