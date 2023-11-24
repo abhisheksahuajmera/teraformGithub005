@@ -13,11 +13,4 @@ terraform {
         name = "gittrig_execrm-ws100-dv"
     }
   }
-
-  backend "azurerm" {
-    # Details configured by GitHub Actions
-    use_azuread_auth = true
-    use_oidc         = true
-    key              = "dv.tfstate"
-  }
 }
