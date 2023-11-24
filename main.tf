@@ -29,8 +29,8 @@ variable "env_version" {
 }
 //
 resource "azurerm_resource_group" "rg105dvtg" {
-  location = var.location
-  name     = "${var.prefix}-${var.environment}"
+  location = var.rgasenv_location
+  name     = "${var.rgasenv_name}-${var.env_name}"
 
   tags = {
     environment = var.env_name
