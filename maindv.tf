@@ -29,11 +29,11 @@ variable "env_version" {
 }
 //
 resource "azurerm_resource_group" "rg105dvtg" {
-  location = var.rgasenv_location
-  name     = "${var.rgasenv_name}-${var.env_name}"
+  location =  "east us"//var.rgasenv_location
+  name     =  "rg105-dv"// "${var.rgasenv_name}-${var.env_name}"
 
   tags = {
-    environment = var.env_name
-    version     = var.env_version
+    environment = "dev100"//var.env_name
+    version     = "100"//var.env_version
   }
 }

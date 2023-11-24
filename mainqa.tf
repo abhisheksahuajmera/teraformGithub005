@@ -16,6 +16,7 @@ variable "rgasenv_location" {
   default     = "eastus"
 }
 //
+/*
 variable "env_name" {
   type        = string
   description = "(Required) The environment in which all resources in this example should be created."
@@ -27,6 +28,7 @@ variable "env_version" {
   description = "(Required) Update to force a change."
   default     = "100"
 }
+*/
 //
 resource "azurerm_resource_group" "rg105qatg" {
   location = var.rgasenv_location
@@ -35,5 +37,14 @@ resource "azurerm_resource_group" "rg105qatg" {
   tags = {
     environment = var.env_name
     version     = var.env_version
+  }
+}
+resource "azurerm_resource_group" "rg105dvtg" {
+  location =  "east us"//var.rgasenv_location
+  name     =  "rg105-qa"// "${var.rgasenv_name}-${var.env_name}"
+
+  tags = {
+    environment = "qa"//var.env_name
+    version     = "100"//var.env_version
   }
 }
