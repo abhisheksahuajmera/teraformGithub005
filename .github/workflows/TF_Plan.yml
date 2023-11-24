@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'TeraAzure/operands/dvrs/**'
+      - 'TeraAzure/operandsdvrs/**'
 jobs:
   terraform:
     name: "Terraform"
