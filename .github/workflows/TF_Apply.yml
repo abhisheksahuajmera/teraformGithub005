@@ -5,7 +5,8 @@ on:
     branches:
       - main
     paths:
-      - 'teraazureoperandrsdv/**'
+      - 'dev/**'
+
 jobs:
   terraform:
     name: "Terraform"
